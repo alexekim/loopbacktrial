@@ -1,0 +1,35 @@
+{
+  "name": "order",
+  "plural": "orders",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "items": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "number",
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "complete": {
+      "type": "boolean",
+      "required": true
+    },
+    "business": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
