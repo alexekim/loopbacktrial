@@ -1,0 +1,77 @@
+#bg{
+  z-index: -1;
+  background: url("https://images.unsplash.com/photo-1451933335233-c41672c8f378?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=be59408fbc40c8e76336db54f2c1527c")no-repeat center center fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+body{
+  background-color: rgb(251, 252, 252);
+  font-family: 'Nunito', sans-serif;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: green;
+}
+
+.customerForm{
+  /*background-color: rgba(19, 19, 19, 0.95);*/
+  color: white;
+}
+
+.stbutton{
+  background-color: RGB(0,222,192);
+  color: white;
+  margin-top: 20px;
+  padding: 10px;
+  width: 300px;
+}
+
+#logo {
+  color: white;
+  margin-left: 10px;
+}
+
+#logo:hover {
+  text-decoration: none;
+}
+
+#place{
+}
+
+#name {
+  width: 750px;
+  height: 40px;
+}
+#address1 {
+  width: 535px;
+  height: 40px;
+}
+#address2 {
+  width: 211px;
+  height: 40px;
+}
+#city{
+  width: 300px;
+  height: 40px;
+}
+#state{
+  width: 150px;
+  height: 40px;
+}
+#zip{
+  width: 292px;
+  height: 40px;
+}

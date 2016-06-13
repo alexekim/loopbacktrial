@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Nunito:300,400' rel='stylesheet' type='text/css'>
+    <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/style.css" media="screen" title="no title" charset="utf-8">
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <title>Hello World test</title>
+  </head>
+  <body ng-app="myApp">
+    <img id="bg" alt="">
+
+    <div class="main" ng-controller="MainController">
+
+      <h1><a id="logo" href="/">{{ title }}</a></h1>
+      <p>{{ test }}</p>
+
+
+
+    </div>
+
+      <a href="http://localhost:3000/api/customers?access_token=1">List All users</a>
+      <!-- <form id="submitname" action="/api/people?access_token=1" method="post">
+        <input type="text" name="firstname" placeholder="firstname" value="">
+        <button type="submit">submit name</button>
+        <br>
+      </form> -->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h2 class="customerForm" id="place">Place your order</h2>
+          </div>
+        </div>
+        <h4 class="customerForm">Customer Information</h4>
+        <!-- FORM HERE -->
+        <form id="customer" action="/api/customers?access_token=1" method="post">
+        <div class="row">
+        <div class="col-sm-12">
+          <input id="name" type="text" name="name" placeholder="Name" value="">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm-12">
+          <input id="address1" type="text" name="address1" placeholder="Address" value="">
+          <input id="address2" type="text" name="address2" placeholder="Unit #" value="">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm-12">
+          <input id="city" type="text" name="city" placeholder="City" value="">
+          <input id="state" type="text" name="state" placeholder="State" value="">
+          <input id="zip" type="text" name="zip" placeholder="Zip Code" value="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <input type="submit" class="stbutton" placeholder="Submit">
+          <!-- <button class="stbutton" type="submit">Submit</button> -->
+        </div>
+      </div>
+
+      </form>
+
+      </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <!-- module -->
+    <script src="scripts/app.js" type="text/javascript"></script>
+
+    <script src="scripts/controllers/MainController.js"></script>
+  </body>
+
+</html>
