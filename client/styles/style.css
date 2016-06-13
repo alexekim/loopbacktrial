@@ -40,6 +40,8 @@ a:hover {
 }
 
 #logo {
+  font-family: 'Grand Hotel', cursive;
+  font-size: 64px;
   color: white;
   margin-left: 10px;
 }

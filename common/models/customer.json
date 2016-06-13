@@ -9,11 +9,11 @@
   "properties": {
     "email": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "password": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "name": {
       "type": "string",
